@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dino Spiel 9595</title>
+    <link rel="stylesheet" href="dinosaur-game.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');</style>
+</head>
+<body>
+<div id="game-container" class="hidden">
+    <button id="pause-button" class="button">Pause</button>
+    <div id="menu" class="hidden">
+        <button id="close-menu-button" class="button">x</button>
+        <label for="speed-slider">Game Speed:</label>
+        <input type="range" id="speed-slider" min="1" max="10" value="5">
+        <button id="theme-toggle" class="button">Toggle Theme</button>
+        <a href="https://github.com/YoungJibbit95/Dino-Game" id="https://github.com/YoungJibbit95/Dino-Game">
+            <button class="button" id="button">Game Source</button>
+        </a>
+        <button id="keybinds-button" class="button">Tastenbelegung</button>
+    </div>
+    <button id="settings-button" class="button">Einstellungen</button>
+    <button id="start-button" class="button">Start</button>
+    <div id="game-canvas" class="hidden">
+        <div id="score" class="hidden">Score: 0</div>
+        <div id="dino"></div>
+    </div>
+    <button id="jump-button" class="jump-button">Springen</button>
+    <div id="keybinds-menu" class="hidden">
+        <button id="close-keybinds-button" class="button">schließen</button>
+        <div id="keybinds-content">
+            <h3>Tastenbelegung</h3>
+            <ul>
+                <li>Jump: Leertaste</li>
+                <li>Jump: Springen Button</li>
+                <li>Pause: P</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="dinosaur-game.js"></script>
+</body>
+</html>
